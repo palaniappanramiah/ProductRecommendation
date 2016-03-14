@@ -4,7 +4,7 @@ Product Recommendation Search
 The problem is executed entirely via the command line.
 
 Overview:
-Search for products based upon a user-provided search string, Use the first item in the search response as input for a product recommendation search, Retrieve reviews of the first 10 product recommendations and Rank order the recommended products based upon the review sentiments using the overall RATING and the number of MEMBERS who provided that rating. 
+Search for products based upon a user-provided search string, Use the first item in the search response as input for a product recommendation search, Retrieve reviews of the first 10 product recommendations and Rank order the recommended products based upon the review sentiments using the overall RATING.
 
 SAMPLE INPUT:
 
