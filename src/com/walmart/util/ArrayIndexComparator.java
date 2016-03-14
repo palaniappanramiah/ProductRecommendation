@@ -22,13 +22,13 @@ public class ArrayIndexComparator implements Comparator<Integer> {
 
 	@Override
 	public int compare(Integer index1, Integer index2) {
-		if (ratingArray[index1] == null || ratingArray[index2] == null
-				|| (ratingArray[index1] == ratingArray[index2] && ratingCountArray[index1] > ratingCountArray[index2]))
-			return 0;
-		else if (ratingArray[index1] < ratingArray[index2])
-			return 1;
-		else
-			return -1;
+		
+		if (ratingArray[index1] == null)
+			ratingArray[index1] = (float) 0;
+		if (ratingArray[index2] == null)
+			ratingArray[index2] = (float) 0;
+		return (ratingArray[index2].compareTo(ratingArray[index1]));
+/*		else if ((ratingArray[index1] == ratingArray[index2] && ratingCountArray[index1] < ratingCountArray[index2]))
+			return ((Integer) ratingCountArray[index2]).compareTo((Integer) ratingCountArray[index1]);*/
 	}
-
 }
